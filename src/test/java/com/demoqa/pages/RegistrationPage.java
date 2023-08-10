@@ -34,6 +34,13 @@ public class RegistrationPage {
         return this;
     }
 
+    public RegistrationPage removeADS() {
+        open("/automation-practice-form");
+        executeJavaScript("$('footer').remove()");
+        executeJavaScript("$('#fixedban').remove()");
+        return this;
+    }
+
     public RegistrationPage setFirstName(String value) {
         firstNameInput.setValue(value);
         return this;
@@ -55,7 +62,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setPhoneNumber(String value) {
-        setPhoneInput.setValue(value);
+        setPhoneInput.setValue(String.valueOf(value));
         return this;
     }
 
