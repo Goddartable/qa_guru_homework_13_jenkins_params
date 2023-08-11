@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.executeJavaScript;
 public class RegistrationPage {
     TableResponsiveComponent checkResponsiveInput = new TableResponsiveComponent();
     CalendarComponent calendar = new CalendarComponent();
-    SelenideElement
+    private SelenideElement
             firstNameInput = $("#firstName"),
             lastNameInput = $("#lastName"),
             userEmailInput = $("#userEmail"),
@@ -25,7 +25,6 @@ public class RegistrationPage {
             setStateInput = $("#state"),
             setCityInput = $("#city"),
             submit = $("#submit");
-
 
     public RegistrationPage openPage() {
         open("/automation-practice-form");
@@ -111,6 +110,4 @@ public class RegistrationPage {
         checkResponsiveInput.checkForm(parentElement, textElement);
         return this;
     }
-
-
 }

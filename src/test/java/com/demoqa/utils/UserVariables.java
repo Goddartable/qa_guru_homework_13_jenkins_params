@@ -10,7 +10,6 @@ public class UserVariables {
             userDay = RandomUtils.getRandomDate(),
             userMonth = RandomUtils.getRandomMonth(),
             userYear = RandomUtils.getRandomYear(),
-    //userBirthdate = RandomUtils.getRandomBday(RandomUtils.getRandomDate(),RandomUtils.getRandomMonth(),RandomUtils.getRandomYear()),
     userSubjects = RandomUtils.getRandomSubject(),
             userHobby = RandomUtils.getRandomHobby(),
             userPicture = RandomUtils.getRandomPicture(),

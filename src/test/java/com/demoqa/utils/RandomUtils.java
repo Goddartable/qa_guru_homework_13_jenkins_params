@@ -104,10 +104,4 @@ public class RandomUtils {
         int year = faker.number().numberBetween(1900, 2005);
         return Integer.toString(year);
     }
-
-    /*public static String getRandomBday(int bDate, String bMonth, int bYear ){
-        return
-    }*/
-
-
 }
