@@ -10,14 +10,13 @@ public class UserVariables {
             userDay = RandomUtils.getRandomDate(),
             userMonth = RandomUtils.getRandomMonth(),
             userYear = RandomUtils.getRandomYear(),
-    userSubjects = RandomUtils.getRandomSubject(),
+            userSubjects = RandomUtils.getRandomSubject(),
             userHobby = RandomUtils.getRandomHobby(),
             userPicture = RandomUtils.getRandomPicture(),
             userAdress = RandomUtils.getRandomAdress(),
             userState = RandomUtils.getRandomState(),
             userCity = RandomUtils.getRandomCity(userState),
-
-    studentName = "Student Name",
+            studentName = "Student Name",
             studentMail = "Student Email",
             studentGender = "Gender",
             studentPhone = "Mobile",
@@ -27,5 +26,4 @@ public class UserVariables {
             studentPics = "Picture",
             studentAddr = "Address",
             studentSaS = "State and City";
-
 }

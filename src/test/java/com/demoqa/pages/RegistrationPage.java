@@ -4,11 +4,9 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.demoqa.pages.components.CalendarComponent;
 import com.demoqa.pages.components.TableResponsiveComponent;
-
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
-
 public class RegistrationPage {
     TableResponsiveComponent checkResponsiveInput = new TableResponsiveComponent();
     CalendarComponent calendar = new CalendarComponent();

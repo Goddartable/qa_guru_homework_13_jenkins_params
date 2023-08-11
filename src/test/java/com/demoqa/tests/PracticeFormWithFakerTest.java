@@ -2,12 +2,8 @@ package com.demoqa.tests;
 
 import com.demoqa.pages.RegistrationPage;
 import org.junit.jupiter.api.Test;
-
 import static com.demoqa.utils.UserVariables.*;
-
-
 public class PracticeFormWithFakerTest extends TestBase {
-
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
@@ -39,6 +35,5 @@ public class PracticeFormWithFakerTest extends TestBase {
                 .checkResponsive(studentPics, userPicture)
                 .checkResponsive(studentAddr, userAdress)
                 .checkResponsive(studentSaS, userState + " " + userCity);
-
     }
 }
