@@ -2,13 +2,14 @@ package com.demoqa.tests;
 
 import com.demoqa.pages.RegistrationPage;
 import org.junit.jupiter.api.Test;
+
 import static com.demoqa.utils.UserVariables.*;
+
 public class PracticeFormWithFakerTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
     void fillFormTest() {
-
         registrationPage
                 .openPage()
                 .removeADS()

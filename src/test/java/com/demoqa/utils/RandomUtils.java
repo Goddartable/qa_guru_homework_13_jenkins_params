@@ -1,9 +1,12 @@
 package com.demoqa.utils;
 
 import com.github.javafaker.Faker;
+
 import java.util.concurrent.ThreadLocalRandom;
+
 public class RandomUtils {
     static Faker faker = new Faker();
+
     public static int getRandomInt(int min, int max) {
         return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
