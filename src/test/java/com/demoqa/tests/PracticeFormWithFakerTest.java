@@ -15,7 +15,7 @@ public class PracticeFormWithFakerTest extends TestBase {
     @DisplayName("Заполнение формы сайта demoqa.com случайными данными с проверкой вывода в модальное окно")
     void fillFormTest() {
         registrationPage
-                .openPage()
+                .openDemoPage()
                 .removeADS()
                 .setFirstName(userFirstName)
                 .setLastName(userLastName)
