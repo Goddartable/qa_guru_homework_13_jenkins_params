@@ -17,6 +17,7 @@ import java.util.Map;
 public class TestBase {
     @BeforeAll
     static void beforeAll() {
+        SelenideLogger.addListener("Allure", new AllureSelenide());
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
@@ -35,9 +36,6 @@ public class TestBase {
 
     @AfterEach
     void afterEachTest() {
-        SelenideLogger.addListener("Allure", new AllureSelenide());
-
-
         ReportAttachments.addVideo();
         ReportAttachments.attachScreenshot();
         ReportAttachments.pageSource();
@@ -46,5 +44,5 @@ public class TestBase {
         Selenide.closeWebDriver();
 
 
-        }
     }
+}
