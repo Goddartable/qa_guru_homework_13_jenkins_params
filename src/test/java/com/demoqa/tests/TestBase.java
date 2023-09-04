@@ -19,12 +19,11 @@ public class TestBase {
     static void beforeAll() {
         SelenideLogger.addListener("Allure", new AllureSelenide());
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        Configuration.browser = System.getProperty("browser", "chrome");
+        /*Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
+        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");*/
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
