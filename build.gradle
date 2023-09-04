@@ -44,6 +44,10 @@ task remote_test(type: Test) {
     }
 }
 
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
+}
+
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
