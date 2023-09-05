@@ -46,7 +46,7 @@ tasks.withType(Test) {
     }
 }
 
-task taskWithTagDemoqa(type: Test) {
+task taskWithTagRemote(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags "remote"
