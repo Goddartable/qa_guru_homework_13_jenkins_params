@@ -23,7 +23,7 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.remote = System.getProperty("remote");
+        Configuration.remote = "https://" + System.getProperty("remote") + "/wd/hub";
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
